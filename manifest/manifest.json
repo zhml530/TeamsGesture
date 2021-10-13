@@ -1,0 +1,62 @@
+{
+    "$schema": "https://developer.microsoft.com/en-us/json-schemas/teams/v1.7/MicrosoftTeams.schema.json",
+    "manifestVersion": "devPreview",
+    "version": "1.0.0",
+    "id": "987f0daa-5dea-4cf8-99e8-b28550a6dc62",
+    "packageName": "com.github.zhml530.videopp",
+    "developer": {
+        "name": "Minliang Zhou",
+        "websiteUrl": "https://zhml530.github.io/TeamsGesture",
+        "privacyUrl": "https://zhml530.github.io/TeamsGesture",
+        "termsOfUseUrl": "https://zhml530.github.io/TeamsGesture"
+    },
+    "icons": {
+        "color": "icon-color.png",
+        "outline": "icon-outline.png"
+    },
+    "name": {
+        "short": "Gesture VideoApp",
+        "full": "Gesture Teams VideoApp"
+    },
+    "description": {
+        "short": "Gesture Effect",
+        "full": "Gesture Effect"
+    },
+    "accentColor": "#FFFFFF",
+	"devicePermissions": [
+		"media"
+	],
+  "authorization": {
+    "permissions": {
+      "resourceSpecific": [
+        {
+          "name": "CameraStream.Read.User",
+          "type": "Delegated"
+        },
+        {
+          "name": "OutgoingVideoStream.Write.User",
+          "type": "Delegated"
+        }
+      ]
+    }
+  },
+    "validDomains": [
+        "zhml530.github.io"
+    ],
+    "localizationInfo": {
+        "defaultLanguageTag": "en-us"
+    },
+    "meetingExtensionDefinition": {
+        "filters": [{
+                "id": "f36d7f68-7c71-41f5-8fd9-ebf0ae38f943",
+                "name": "EyeLash",
+                "thumbnail": "OrnamentFilter.png"
+            }, {
+                "id": "e6b893ca-2589-4492-9375-801562a213f0",
+                "name": "Blush",
+                "thumbnail": "DeformFilter.png"
+            }
+        ],
+        "videoAppContentUrl": "https://zhml530.github.io/TeamsGesture/app/"
+    }
+}
